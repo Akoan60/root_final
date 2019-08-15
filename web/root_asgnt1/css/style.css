@@ -1,0 +1,104 @@
+/*this is a comment*/
+body{
+	background: url(../images/wallpaper2.jpg) #33a6cc no-repeat;
+	background-size: cover;
+}
+h1{
+	color: #C7820C;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 52px;
+	text-transform: capitalize;
+	line-height: 50px;
+}
+
+h2, h3{
+	color: #333;
+	font-size: 28px;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+h2{
+	font-size: 36px;
+}
+
+p{
+	color: #333;
+	font-family: verdana,helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+/*===link section==*/
+
+a:link{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 18px;
+	color: green;
+	text-decoration: none;
+	text-transform: capitalize;
+	background-color: #afc7cf;
+	line-height: 50px;
+	padding: 10px;
+	margin: 0;
+}
+
+a:visited{
+	color: green;
+
+}
+
+a:hover{
+	color: #222;
+	background-color: #ffff00;
+	text-decoration: underline;
+}
+
+a:active{
+	color: rgb(243, 120, 187);
+}
+
+/*===classes===*/
+
+.quote_me{
+	font-size: 14px;
+	font-family: georgia, sans-serif;
+	line-height: 18px;
+	background-color: green;
+	padding: 10px 20px;
+	margin: 10px 40px;
+	border-left: solid 40px black; 
+}
+
+div{
+	background-color: #eee;
+	width: 80%;
+	max-width: 900px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li{
+	float: left;
+}
+
+li a {
+    display: block;
+    width: 90%;
+    background-color: #dddddd;
+}
+
+.portfolio {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	background: rgb(50, 54, 61);
+	color: rgb(244, 245, 247);
+}

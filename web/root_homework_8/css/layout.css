@@ -1,0 +1,80 @@
+/*=== RESET ===*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%; /*allows for element in the body to have a height in %*/
+}
+
+/* === MOBILE LAYOUT ===*/
+
+/* 0px to 481px. Inherit style from: Tablet layout. */
+/* Describes what is supposed to happen when the screen of the media has a size of 0px to 481px. */
+
+/*=== SECTION 1 ===*/
+#sec1 {
+
+}
+
+/*=== SECTION 2 ===*/
+#sec2 {
+	height: auto;
+}
+
+/*=== FOOTER ===*/
+footer {
+	
+}
+
+
+/* === TABLET LAYOUT ===*/
+
+/* 481px to 768px. Inherit style from: Mobile layout. */
+/* Describes what is supposed to happen when the screen of the media has a size of 481px to 768px. */
+
+@media only screen and (min-width: 481px) {
+	/*=== SECTION 1 ===*/
+	#sec1 {
+
+	}
+	
+	/*=== SECTION 2 ===*/
+	#sec2 {
+		width: 80%;
+		margin: auto;
+		height: auto;
+	}
+	
+	#sec2 article {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	}
+}
+
+
+/* === DESKTOP LAYOUT ===*/
+
+/* Desktop layout: 769px to  a max of 1200px. Inherit style from: Mobile layout & Tablet layout. */
+/* Describes what is supposed to happen when the screen of the media has a size of 769px to 1200+px */
+
+@media only screen and (min-width: 769px) {
+	/*=== SECTION 1 ===*/
+	#sec1 {
+
+	}
+	
+	/*=== SECTION 2 ===*/
+	#sec2 {
+		
+	}
+	
+	/*=== FOOTER ===*/
+	footer {
+		height: auto;
+	}
+}

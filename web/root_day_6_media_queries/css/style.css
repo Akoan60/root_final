@@ -1,0 +1,27 @@
+/* CSS Document */
+
+.portfolio {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	z-index: 100;
+}
+
+a:link.portfolio, a:visited.portfolio  {
+	padding: 10px;
+	background: rgb(50, 54, 61);
+	color: rgb(249, 249, 249);
+	font-size: 23px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+a:hover.portfolio {
+	background: rgb(0, 242, 222);
+	color: rgb(22, 22, 22);
+}
+
+a:active.portfolio {
+	background: rgb(244, 212, 4);
+	color: rgb(247, 0, 0);
+}

@@ -1,0 +1,161 @@
+/*=== RESET CSS ===*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*=== GENERAL ===*/
+section, article, aside, nav, a {
+	/*border: 1px red solid;*/
+}
+
+html, body {
+	height: 100%;
+}
+
+/*=== GENERAL TEXT ===*/
+p {
+	font-family: gotham,helvetica, verdana, sans-serif;
+}
+
+h1 {
+	font-family: gotham,helvetica, verdana, sans-serif;
+	font-size: 72px;
+	line-height: 72px;
+	text-transform: capitalize;
+}
+
+/*=== NAV BAR ===*/
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	background-color: #a83956;
+	z-index: 100;
+}
+
+nav a:link {
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10.5px 15px;
+}
+
+nav a:visited {
+	color: #ffffff;
+}
+
+nav a:hover {
+	color: #000000;
+	background-color: #bca812;
+	text-decoration: underline;
+}
+
+nav a:active {
+	color: #d60000;
+	text-decoration: none;
+}
+
+/*=== SECTION ===*/
+section {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+section h1 {
+	padding-bottom: 15px;
+}
+/*=== SECTION 1 ===*/
+#sec1 {
+	background: url(../images/bg4.jpg) no-repeat fixed;
+	background-size: cover;
+}
+
+#sec1 article {
+	width: 30%;
+	background-color: #faffd6;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/*=== SECTION 2 ===*/
+#sec2 {
+	background: url(../images/bg5.jpg) no-repeat fixed;
+	background-size: cover;
+}
+
+#sec2 article {
+	width: 30%;
+	background-color: #6ad0ed;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/*=== SECTION 3 ===*/
+
+#sec3 {
+	background: url(../images/bg6.jpg) no-repeat fixed;
+	background-size: cover;
+	padding-top: 0px;
+}
+
+#sec3 article {
+	width: 45%;
+	background-color: #ffeb5b;
+	padding: 20px;
+	margin: 5% 0px 0px 5%;
+	position: absolute;
+	float: left;
+}
+
+#sec3 aside{
+	width: 30%;
+	background-color: #ffeb5b;
+	position: absolute;
+	padding: 20px;
+	margin: 10% 0px 0px 60%;
+	float: left;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.portfolio {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	z-index: 100;
+}
+
+a:link.portfolio, a:visited.portfolio  {
+	padding: 10px;
+	background: rgb(50, 54, 61);
+	color: rgb(249, 249, 249);
+	font-size: 23px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+a:hover.portfolio {
+	background: rgb(0, 242, 222);
+	color: rgb(22, 22, 22);
+}
+
+a:active.portfolio {
+
+}
+
+/*=== FOOTER ===*/
+footer {
+	background: rgb(175, 177, 181);
+	text-align: center;
+}

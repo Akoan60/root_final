@@ -1,0 +1,103 @@
+/*this is a comment*/
+body{
+	background-color: #333;
+}
+h1{
+	color: #C7820C;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 52px;
+	text-transform: capitalize;
+	line-height: 50px;
+}
+
+h2, h3{
+	color: #333;
+	font-size: 28px;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+h2{
+	font-size: 36px;
+}
+
+p{
+	color: #333;
+	font-family: verdana,helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+/*===link section==*/
+
+a:link{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 18px;
+	color: green;
+	text-decoration: none;
+	text-transform: capitalize;
+	background-color: #3F2273;
+	padding: 10px;
+	margin: 0;
+}
+
+a:visited{
+	color: green;
+
+}
+
+a:hover{
+	color: #222;
+	background-color: red;
+	text-decoration: underline;
+}
+
+a:active{
+	color: rgb(243, 120, 187);
+}
+
+/*===classes===*/
+
+.quote_me{
+	font-size: 14px;
+	font-family: georgia, sans-serif;
+	line-height: 18px;
+	background-color: green;
+	padding: 10px 20px;
+	margin: 10px 40px;
+	border-left: solid 40px black; 
+}
+
+.portfolio {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	z-index: 100;
+}
+
+a:link.portfolio, a:visited.portfolio  {
+	padding: 10px;
+	background: rgb(50, 54, 61);
+	color: rgb(249, 249, 249);
+	font-size: 23px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+a:hover.portfolio {
+	background: rgb(0, 242, 222);
+	color: rgb(22, 22, 22);
+}
+
+a:active.portfolio {
+	background: rgb(244, 212, 4);
+	color: rgb(247, 0, 0);
+}
+
+div{
+	background-color: #eee;
+	width: 80%;
+	max-width: 900px;
+	padding: 20px;
+	margin: 0 auto;
+}

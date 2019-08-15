@@ -1,0 +1,290 @@
+/*=== GOOGLE FONTS ===*/
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:900|Cinzel|Exo+2');
+/*
+font-family: 'Exo 2', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'Alegreya SC', serif;
+*/
+
+/*=== CSS RESET ===*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%; /* this allow for the children to support a height of a 100*/
+}
+
+/*=== BODY ===*/
+body {
+	background-size: cover;
+	font-family: verdana, arial, sans-serif;
+}
+
+#body_got {
+	background: url(../images/got_bg.jpg) no-repeat fixed center center;
+}
+
+#body_stranger {
+	background: url(../images/stranger_bg.jpg) no-repeat fixed center center;
+}
+
+#body_westworld {
+	background: url(../images/westworld_bg.jpg) no-repeat fixed center center;
+}
+
+
+/*=== NAV INFO ===*/
+nav {
+	width: 100%;
+	padding: 10px 20px;
+	background: rgba( 0, 0, 0, .6);
+	text-align: center;
+	position: fixed; /*doesn't konw yet where to be fixed*/
+	top: 0;
+	left: 0;
+	z-index: 200;
+}
+
+nav a:link, nav a:visited {
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+	margin: 0 10px;
+	border: none;
+}
+
+nav a:hover {
+	color: tan;
+	border-bottom: dotted 1px tan; /* the border will serve as the underline*/
+}
+
+nav a.active {
+	color: red;
+	border-bottom: dotted 1px red;
+}
+
+/*=== SECTION GENERAL ===*/
+section {
+	width: 100%;
+	height: 100%;
+	background: teal;
+	position: relative;
+	box-shadow: rgba( 0, 0, 0, 0.75); /* rgba plays on the transparency */
+}
+
+/*=== SECTION 1 ===*/
+#sec1 {
+	background: url(../images/bg1.jpg) fixed center center no-repeat;
+	background-size: cover;
+}
+
+#sec1 header {
+	width: 60%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+/*	border: 1px red solid;*/
+}
+
+#sec1 header h1, #sec1 header h2 {
+	color: #eee;
+	text-align: center;
+	text-transform: capitalize;
+	text-shadow: 5px 10px 0px rgb(0, 0, 0, 0);
+}
+
+#sec1 header h2 {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: normal;
+	font-size: 40px;
+}
+
+#sec1 header h1 {
+	font-family: 'Sansita', sans-serif;
+	font-size: 96px;
+	text-transform: uppercase;
+	line-height: 85px;
+}
+
+
+/*=== SECTION 2 ===*/
+#sec2 {
+	padding: 1.5% 1.5% 3%;
+	background: #27303f;
+	height: auto;
+}
+
+#sec2 figure {
+	width: 30%;
+	/*margin: 1.5%;*/
+	display: inline-block;
+	background: #fff;
+}
+
+#sec2 figcaption{
+	text-align: center;
+	text-transform: capitalize;
+	background: #ced6e0;
+}
+
+#sec2 img {
+	width: 100%;
+	height: auto;
+}
+
+/*=== SECTION 3 ===*/
+#sec3 {
+	padding: 3% 1.5%;
+	background: url(../images/bg2.jpg) fixed center center no-repeat;
+	background-size: cover;
+	height: auto;
+}
+
+#sec3 article {
+	width: 72%;
+	margin: 0 1.5%;
+	background: #6ba2f9;
+	float: left;
+	padding: 1.5%;
+}
+
+#sec3 aside {
+	width: 21%;
+	margin: 0 1.5%;
+	background: #6ba2f9;
+	float: left;
+	padding: 1.5%;
+}
+
+#sec3 article h1,#sec3 aside h1 {
+	margin-bottom: 1%;
+	padding: 0 1.5%;
+	font-size: 22px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+#sec3 article p, #sec3 aside p  {
+	margin-bottom: 1%;
+	padding: 0 1.5%;
+	line-height: 20px;
+}
+
+#sec3 article p {
+	font-family: 'Sansita', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+#sec3 aside p {
+	font-style: italic;
+	font-size: 14px;
+}
+
+/*===  DIV ===*/
+#wrapper {
+	width: 80%;
+	margin: 5% auto;
+	padding: 1.5% 1.5% .5% 1.5%;
+	background: #eee;
+}
+
+#wrapper header {
+	width: 35%;
+	margin: 0% 0% 2.5% 50%;
+	transform: translate(-50%, 0%);
+}
+
+#got_header {
+	background: #5daec6;
+}
+
+#stranger_header {
+	background: #db9232;
+}
+#westworld_header {
+	background: #5daec6;
+}
+
+#wrapper header h1, #wrapper header h2, #wrapper header h3 {
+	font-family: 'Exo 2', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#wrapper article {
+	/*background: #0050ff;*/
+}
+
+#wrapper article h1, #wrapper article h2, #wrapper article h3 {
+	margin-top: 1.5%;
+	background: #000000;
+	color: #FFFFFF;
+	font-family: 'Exo 2', sans-serif;
+	text-align: center; /*this text-align and background also affects the header h2 in section 1 !? */
+	text-transform: capitalize;
+}
+
+#wrapper article p {
+	margin-top: 1%;
+	font-family: 'Sansita', sans-serif;
+	font-size: 18px;
+}
+
+#wrapper figure img {
+	width: 100%;
+	max-width: 2000px;
+	height: auto;
+}
+
+/*=== FOOTER ===*/
+footer {
+	margin: 0 0 0 0;
+	background: #757677;
+	text-align: center;
+	clear: both;
+}
+
+footer p {
+	color: #fcfcfc;
+}
+
+#footer_inpage {
+	margin-top: 2%;
+}
+
+/*=== CLASSES ===*/
+.clearfix {
+	clear: both;
+}
+
+.portfolio {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	z-index: 100;
+}
+
+a:link.portfolio, a:visited.portfolio  {
+	padding: 10px;
+	background: rgb(50, 54, 61);
+	color: rgb(249, 249, 249);
+	font-size: 23px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+a:hover.portfolio {
+	background: rgb(0, 242, 222);
+	color: rgb(22, 22, 22);
+}
+
+a:active.portfolio {
+	background: rgb(244, 212, 4);
+	color: rgb(247, 0, 0);
+}

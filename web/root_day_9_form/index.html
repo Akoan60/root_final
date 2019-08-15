@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Day 8 - Form</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+
+<body>
+<div id="wrapper">
+	<form action="MAILTO:santoromano@videotron.ca" method="post" enctype="text/plain" validate>
+		<label for="fname">First Name</label> <!--the label is to specify where its going to apply-->
+		<input type="text" id="fname" name="firstname" placeholder="John" required>
+
+		<label for="lname">Last Name</label>
+		<input type="text" id="lname" name="lastname" placeholder="Doe" required>
+
+		<label for="mail">Email</label>
+		<input type="email" id="mail" name="email" placeholder="johndoe@mysite.com" required>
+
+		<label for="tarea">Comments</label>
+		<textarea placeholder="Drop a line!"></textarea>
+
+		<input type="submit" value="Send">
+		<input type="reset" value="Reset">
+	</form>
+</div>
+
+<a href="../../index.html" class="portfolio">back to portfolio</a>
+</body>
+</html>

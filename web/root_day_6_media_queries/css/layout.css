@@ -1,0 +1,87 @@
+/* LAYOUT CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*box sizing doesn't effect the margin of the element*/
+}
+
+html, body {
+	height: 100%; /*allow for element in the body to have an height in percentage*/
+}
+
+/*=== MEDIA QUERIES ====*/
+
+/* Mobile first: will be inherited by other layouts */
+/* This layout will be valide from 0 to 481px */
+
+
+body {
+	background: #000;
+}
+
+#wrapper {
+	width: 100%;
+	padding: 20px;
+	background: #FFFFFF;
+}
+
+header, nav, section, article, aside {
+	margin-bottom: 20px;
+}
+
+section, article, aside {
+	width: 100%;
+	float: none;
+}
+
+/* === TABLET LAYOUT ===*/
+
+/* 481px to 768px. Inherit style from: Mobile layout. */
+/* Describes what is supposed to happen when the screen of the media has a size of 481px to 768px. */
+
+@media only screen and (min-width: 481px) {
+	#wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	section {
+		width: 50%;
+		float: left;
+	}
+	
+	article {
+		clear: both;
+	}
+}
+
+/* === DESKTOP LAYOUT ===*/
+
+/* Desktop layout: 769px to  a max of 1200px. Inherit style from: Mobile layout & Tablet layout. */
+/* Describes what is supposed to happen when the screen of the media has a size of 769px to 1200+px */
+
+@media only screen and (min-width: 769px) {
+	#wrapper {
+		width: 80%;
+		max-width: 1200px;
+	}
+	
+	section {
+		width: 25%;
+	}
+	
+	article {
+		width: 73%;
+		float: left;
+		margin-right: 2%;
+	}
+	
+	aside {
+		width: 25%;
+		float: left;
+	}
+	
+	footer {
+		clear: both;
+	}
+}

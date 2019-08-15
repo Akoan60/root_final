@@ -1,0 +1,315 @@
+/*=== NAV INFO ===*/
+nav {
+	position: fixed;
+	margin: 0;
+	padding: 1.2% 4%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background: rgba(242, 4, 40, .7);
+	z-index: 100;
+}
+
+nav a:link, nav a:visited {
+	padding: 1.2% 4%;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: black;
+	background: white;
+}
+
+nav a:active {
+	color: black;
+}
+
+/*=== BODY ===*/
+
+
+
+/*=== SECTION 1 ===*/
+#sec1 {
+	/*background: green;*/
+}
+
+#sec1 hgroup {
+	position: absolute;
+	width: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: capitalize;
+	text-align: center;
+	font-family: 'BioRhyme', serif;
+	line-height: 60px;
+	color: rgb(218, 226, 239);
+}
+
+#sec1 video#bgvid {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto; /* the auto ensure that the width or the height 
+	will adapt to any change made in the other */
+	height: auto;
+	z-index: -100;
+	background: url(..images/Hello-World.jpg) no-repeat;
+	background-size: cover;
+}
+
+/*=== SECTION 2 ===*/
+#sec2 {
+	/*background: blue;*/
+	padding: 0 0 40px;
+	background: rgb(179, 207, 214);
+}
+
+#sec2 a:link, #sec2 a:visited {
+	color: rgb(3, 60, 66);
+	text-decoration: none;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#sec2 a:hover {
+
+}
+
+#sec2 a:active {
+
+}
+
+#sec2 h1 {
+	width: 80%;
+	margin: 0 auto 30px;
+	padding: 30px 0 20px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Anton', sans-serif;
+	background: rgb(153, 155, 152);
+}
+
+#sec2 figure {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 7px;
+	box-shadow: inset 0px 0px 0px 5px rgba( 50, 50, 50, .5);
+	transition: all .5s; /* all figures have that transition */
+}
+
+#sec2 figure:hover { 
+	box-shadow: inset 0px 0px 0px 120px rgba( 50, 50, 50, 0);
+}
+
+#sec2 figure h3 {
+	position: absolute; /* making it absolute turn it into an inline element 
+	with a width just big enough to contain the object */
+	width: 100%; /* width of 100% so the text can be centered */
+	text-transform: capitalize;
+	text-align: center;
+	top: 10px;
+	transition: all .35s;
+	opacity: 0;
+}
+
+#sec2 figure:hover h3 {
+	top: 50px;
+	opacity: 1;
+}
+
+#sec2 figure figcaption {
+	position: absolute;
+	width: 100%;
+	padding: 20px;
+	bottom: -120px;
+	background: rgba( 0, 0, 0, .8);
+	color: white;
+	text-align: center;
+	transition: all .35s ease-out;
+}
+
+#sec2 figure:hover figcaption {
+	bottom: 0px;
+}
+
+#sec2 #fig1 {
+	background: url(../images/number1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#sec2 #fig1:hover {
+	background: url(../images/fig_image.jpg) no-repeat center right;
+}
+
+#fig2 {
+	background: url(../images/number2.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#fig2:hover {
+	background: url(../images/fig_image.jpg) no-repeat center right;
+}
+
+#fig3 {
+	background: url(../images/number3.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#fig3:hover {
+	background: url(../images/fig_image.jpg) no-repeat center right;
+}
+
+#fig4 {
+	background: url(../images/number4.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#fig4:hover {
+	background: url(../images/fig_image.jpg) no-repeat center right;
+}
+
+#fig6 {
+	background: url(../images/number6.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#fig6:hover {
+	background: url(../images/fig_image.jpg) no-repeat center right;
+}
+
+#fig7 {
+	background: url(../images/number7.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#fig7:hover {
+	background: url(../images/fig_image.jpg) no-repeat center right;
+}
+#fig8 {
+	background: url(../images/number8.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#fig8:hover {
+	background: url(../images/fig_image.jpg) no-repeat center right;
+}
+#fig9 {
+	background: url(../images/number9.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#fig9:hover {
+	background: url(../images/fig_image.jpg) no-repeat center right;
+}
+#figwrap {
+	/*padding: 0% 2% 0% 0%; */
+	/*background-color: red;*/
+}
+
+/*=== SECTION 3 ===*/
+#sec3 {
+	background: rgb(64, 109, 114);
+}
+
+#sec3 article h1,  #sec3 h1 {
+	text-align: center;
+}
+
+#sec3 h1 {
+	margin: 
+}
+
+#wrapper {
+	background: rgb(64, 109, 114);
+	margin: 0 auto 0;
+	height: auto;
+	width: 60%;
+	padding: 20px;
+}
+
+input[type=text], input[type=email] {
+	width: 30%;
+	padding: 10px;
+	margin: 0 auto 20px;
+	display: block;
+	border: none;
+	border-bottom: 1px dotted #000;
+	/*border-radius: 4px;*/
+	font-size: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #333;
+	transition: all .3s;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+	width: 35%;
+	background: #333;
+	color: white;
+	outline: none;
+	border-bottom: 1px solid red;
+}
+
+input[type=submit] {
+	width: auto;
+	background-color: #99F;
+	color: #333;
+	padding: 10px;
+	margin: 14px auto;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 22px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	transition: all .3s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #333;
+	color: #eee;
+}
+
+textarea {
+	display: block;
+	margin: auto;
+	width: 50%;
+	height: 60px;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	resize: none;
+	color: #333;
+	margin-bottom: 24px;
+	transition: all .3s;
+}
+
+textarea:focus {
+	background-color: #333;
+	color: #fff;
+	outline: none;
+}
+
+label {
+	margin: auto;
+	width: 40%;
+	display: block;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*=== FOOTER ===*/
+footer {
+	margin: 0;
+	padding: .8% 0 .8% 0;
+	text-align: center;
+	background: rgb(79, 79, 79);
+}

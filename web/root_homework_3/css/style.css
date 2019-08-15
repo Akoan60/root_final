@@ -1,0 +1,172 @@
+/* CSS Document */
+
+/*=== CSS RESET ===*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #2A1818;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+
+div{
+	background: #D3BDBD;
+	width: 80%;
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 20px;	
+}
+
+header, nav, article, figure, figcaption {
+/*	border: solid red 1px;*/
+	margin: 20px;
+}
+
+header h1 {
+	font-size: 52px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+header h2 {
+	font-size: 24px;
+	color: #777;
+	text-transform: capitalize;
+	font-family: georgia, times, serif;
+	font-style: italic;
+}
+
+/*=== LINKS ===*/
+
+a:link {
+	font-family: georgia, times, serif;
+	font-style: italic;
+	color: green;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+a:active {
+	color: black;
+	text-decoration: underline;
+}
+
+/*=== NAV INFO ===*/
+nav {
+	background-color: #333;
+	padding: 10px;
+	text-transform: capitalize;
+}
+
+nav a:link {
+	background-color: #333;
+	color: #eee;
+	text-decoration: none;
+	padding: 11px 20px;
+}
+
+nav a:visited {
+	color: #CD7D7F;
+}
+
+nav a:hover {
+	background-color: #AFAFAF;
+	color: #333;
+}
+
+/*=== ARTICLE INFO ===*/
+article h1 {
+	font-size: 36px;
+	text-transform: capitalize;
+}
+
+article h2{
+	font-size: 32px;
+	text-transform: capitalize;
+	color: #333;
+	font-family: georgia, times, serif;
+	font-style: italic;
+}
+
+article p {
+	margin-bottom: 20px;
+	line-height: 22px;
+}
+
+/*=== FOOTER ===*/
+footer {
+	background-color: #333;
+	color: #eee;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+/*=== FIGURE INFO ===*/
+figure {
+	margin-bottom: 20px;
+}
+
+figure img {
+	/*max-width: 100%;  never bigger than original size */
+	width: 100%;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 14px;
+	font-family: georgia, times, serif;
+	font-style: italic;
+	margin: 10px;
+}
+
+/*=== ASIDE INFO ===*/
+
+aside {
+	background-color: #333;
+	color: #eee;
+	font-size: 28px;
+	font-family: georgia, times, serif;
+	font-style: italic;
+	width: 200px;
+	padding: 20px;
+	float: right;
+	margin-left: 20px;
+}
+
+/*=== CLASSES ===*/
+
+.portfolio {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	z-index: 100;
+}
+
+a:link.portfolio, a:visited.portfolio  {
+	padding: 10px;
+	background: rgb(50, 54, 61);
+	color: rgb(249, 249, 249);
+	font-size: 23px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+a:hover.portfolio {
+	background: rgb(0, 242, 222);
+	color: rgb(22, 22, 22);
+}
+
+a:active.portfolio {
+	background: rgb(244, 212, 4);
+	color: rgb(247, 0, 0);
+}

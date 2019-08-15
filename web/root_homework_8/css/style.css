@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather');
+/*
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Merriweather', serif;
+*/
+
+/* VIDEO CSS */
+/* videos in different section have to be at a different z-index so each of them  show */
+
+video#bgvid {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto; /* the auto ensure that the width or the height 
+	will adapt to any change made in the other */
+	height: auto;
+	z-index: -100;
+	background: url(..images/poster_img.jpg) no-repeat;
+	background-size: cover;
+}
+
+
+section {
+	width: 100%;
+	position: relative;
+}
+
+/*=== SECTION 1 ===*/
+#sec1 {
+	height: 100%;
+}
+
+#sec1 hgroup {
+	width: 20%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: #FBFBFB;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'Merriweather', serif;
+	/*background: red;*/
+	/*border: 1px solid red;*/
+}
+
+/*=== SECTION 2 ===*/
+#sec2 {
+	background-color: #eee;
+}
+
+article {
+	padding: 10px 15px 20px;
+}
+
+article h1 {
+	-webkit-column-span: all;
+    column-span: all;
+    font-size: 42px;
+    margin: 20px 0 6px;
+}
+article p {
+	margin-bottom: 20px;
+	line-height: 20px;
+}
+
+/*=== FOOTER ===*/
+footer {
+	padding: 5px 0;
+	text-align: center;
+	background: #FFC800;
+}
+
+/*=== CLASSES ===*/
+
+.portfolio {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	z-index: 100;
+}
+
+a:link.portfolio, a:visited.portfolio  {
+	padding: 10px;
+	background: rgb(50, 54, 61);
+	color: rgb(249, 249, 249);
+	font-size: 23px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+a:hover.portfolio {
+	background: rgb(0, 242, 222);
+	color: rgb(22, 22, 22);
+}
+
+a:active.portfolio {
+	background: rgb(244, 212, 4);
+	color: rgb(247, 0, 0);
+}
